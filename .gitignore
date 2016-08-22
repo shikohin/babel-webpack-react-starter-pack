@@ -3,3 +3,4 @@ lib
 *.swp
 *.swo
 node_modules
+.idea
