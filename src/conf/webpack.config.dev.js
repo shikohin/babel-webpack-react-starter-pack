@@ -30,13 +30,13 @@ WebpackConfig.output.publicPath = Config.baseJsUrl;
 
 WebpackConfig.plugins = WebpackConfig.plugins.concat([
   new webpack.HotModuleReplacementPlugin(),
-  new webpack.NoErrorsPlugin(),
+  new webpack.NoEmitOnErrorsPlugin(),
 ]);
 
 // configure loaders
 WebpackConfig.module.loaders = WebpackConfig.module.loaders.concat([{
   test: /\.js$/,
-  loaders: ['react-hot', 'babel'],
+  loaders: ['react-hot-loader', 'babel-loader'],
   exclude: /node_modules/,
 }]);
 

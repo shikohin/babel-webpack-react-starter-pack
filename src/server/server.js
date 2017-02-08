@@ -10,7 +10,7 @@ import routes from 'app/shared/routes';
 const app = express();
 
 app.set('views', './src/views');
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 
 app.use(Config.baseJsPath, express.static('lib/static/js'));
 app.use(Config.baseImagePath, express.static('lib/static/img'));
